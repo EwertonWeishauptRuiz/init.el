@@ -107,9 +107,6 @@
   (insert "import pdb; pdb.set_trace()"))
 (global-set-key (kbd "C-x C-p") 'pdb-set-trace)
 
-;; Get intempus project path
-(setq initial-buffer-choice "~/Documents/projects/ewr_django/")
-
 ;; Set Up split
 (defun split-window-3()
  "Splite window into 3 equal windows"
@@ -163,4 +160,4 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-(load-theme 'doom-molokai)
+(load-theme 'snazzy)
