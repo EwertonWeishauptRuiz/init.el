@@ -14,6 +14,7 @@
 	magit
 	multiple-cursors
 	iedit
+	flymd
 	;; Python Stuff
 	flycheck
 	elpy)

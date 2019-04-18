@@ -45,12 +45,18 @@
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 
-
+;; Use lines for identation - highlight-indent-guides must be
+;; installed within package manager
+(setq highlight-indent-guides-method 'character)
+(setq highlight-indent-guides-character ?\|)
 
 ;; Delete blank spaces and leave just one
 (global-set-key (kbd "C-x <deletechar>") 'just-one-space)
 
-;; Widnow Management
+;; Preview Live MarkDown
+(global-set-key (kbd "C-x RET C-d") 'flymd-flyit)
+
+;; Window Management
 ;;-----------------------:|:---------------------------
 ;; Resize Windows with Ctrl+Shift+ArrowKeys
 (global-set-key (kbd "S-C-<left>") 'shrink-window-horizontally)
@@ -73,4 +79,5 @@
 
 ;;Load desired hooks
 (load "~/.emacs.d/python/init-packages-python")
+
 (load-theme 'tango-dark)
